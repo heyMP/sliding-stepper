@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    :root {
+      --hue: 223;
+      --bg: hsl(var(--hue), 10%, 90%);
+      --fg: hsl(var(--hue), 10%, 10%);
+    }
+
+    /* Dark theme */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: hsl(var(--_hue), 10%, 20%);
+        --fg: hsl(var(--_hue), 10%, 90%);
+      }
+    }
+
+    body {
+      background-color: var(--bg);
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../sliding-stepper.js';
+    render(
+      html`
+        <sliding-stepper></sliding-stepper>
+        <sliding-stepper min="-50" max="50" value="5" step="5"></sliding-stepper>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
