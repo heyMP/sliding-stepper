@@ -1,5 +1,7 @@
 # \<sliding-stepper>
 
+Web Component implementation of Jon Kantner's sliding stepper Codepen. https://codepen.io/jkantner/pen/oNGzBmm
+
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
