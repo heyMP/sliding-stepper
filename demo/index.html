@@ -21,20 +21,10 @@
       background-color: var(--bg);
     }
   </style>
+  <script type="module" src="../sliding-stepper.js"></script>
 </head>
 <body>
-  <div id="demo"></div>
-
-  <script type="module">
-    import { html, render } from 'lit';
-    import '../sliding-stepper.js';
-    render(
-      html`
-        <sliding-stepper></sliding-stepper>
-        <sliding-stepper min="-50" max="50" value="5" step="5"></sliding-stepper>
-      `,
-      document.querySelector('#demo')
-    );
-  </script>
+  <sliding-stepper></sliding-stepper>
+  <sliding-stepper min="-50" max="50" value="5" step="5"></sliding-stepper>
 </body>
 </html>
