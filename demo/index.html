@@ -19,12 +19,21 @@
 
     body {
       background-color: var(--bg);
+      height: 100vh;
+      display: flex;
+      place-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
   </style>
   <script type="module" src="../sliding-stepper.js"></script>
 </head>
 <body>
   <sliding-stepper></sliding-stepper>
+
+  <sliding-stepper min="10" max="20"></sliding-stepper>
+
   <sliding-stepper min="-50" max="50" value="5" step="5"></sliding-stepper>
 </body>
 </html>

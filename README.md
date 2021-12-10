@@ -18,10 +18,14 @@ npm i sliding-stepper
 
 ```html
 <script type="module">
-  import 'sliding-stepper/sliding-stepper.js';
+  import 'https://unpkg.com/sliding-stepper?module';
 </script>
 
 <sliding-stepper></sliding-stepper>
+
+<sliding-stepper min="10" max="20"></sliding-stepper>
+
+<sliding-stepper min="-50" max="50" value="5" step="5"></sliding-stepper>
 ```
 
 ## Linting and formatting
