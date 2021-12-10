@@ -3,9 +3,9 @@
   "description": "Webcomponent sliding-stepper following open-wc recommendations",
   "license": "MIT",
   "author": "sliding-stepper",
-  "version": "0.0.1",
-  "main": "index.js",
-  "module": "index.js",
+  "version": "0.0.2",
+  "main": "sliding-stepper.js",
+  "module": "sliding-stepper.js",
   "type": "module",
   "scripts": {
     "analyze": "cem analyze --litelement",
@@ -14,7 +14,8 @@
     "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"**/*.js\" --write --ignore-path .gitignore",
     "test": "web-test-runner --coverage",
     "test:watch": "web-test-runner --watch",
-    "deploy": "node ./scripts/deploy.js"
+    "deploy": "node ./scripts/deploy.js",
+    "precompress": "npm run analyze"
   },
   "dependencies": {
     "lit": "^2.0.2"
@@ -55,5 +56,15 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "files": [
+    "index.js",
+    "sliding-stepper.js",
+    "src",
+    "custom-elements.json",
+    "LICENSE",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ]
 }
