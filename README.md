@@ -4,6 +4,10 @@ Web Component implementation of Jon Kantner's sliding stepper Codepen. https://c
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
+## Demo
+
+[sliding-stepper.vercel.app](https://sliding-stepper.vercel.app)
+
 ## Installation
 
 ```bash
